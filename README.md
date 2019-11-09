@@ -1,6 +1,6 @@
 # Calculla-for-Linux-systems
 # calculla
-simple calculator for better understanding working of modern interpreters and compilers &amp; a good linux command for  arithmatic operations in bash scripts
+ calculator for better understanding working of modern interpreters and compilers &amp; a good linux command for  arithmatic operations in bash scripts
 
 there are a few good commands in linux ( bc or expr ) for doing arithmatic caluclations for bash scripts but none of them provides the facility of performing mathematical operations with easy to use syntax . 
 
