@@ -8,7 +8,7 @@ there are a few good commands in linux ( bc or expr ) for doing arithmatic caluc
 
 this project will also help those students who want to understand functionality of interpreters. 
 
-#How to use calculla?
+# How to use calculla?
 
 3 ways;
 
