@@ -6,7 +6,7 @@ there are a few good commands in linux ( bc or expr ) for doing arithmatic caluc
 
 "calculla" is very easy to use in bash scripts .
 
-this project will also help those students who want to understand functionanility of interpreters. 
+this project will also help those students who want to understand functionality of interpreters. 
 
 #How to use calculla?
 
