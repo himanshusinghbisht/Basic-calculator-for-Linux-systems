@@ -65,7 +65,7 @@ int num[100];
 float realnum[100];
 int n=0;
 bool forever;
- if(argc>=3)
+ if(argc==3)
  {
    cout << "help : calculla - h \n";
    cout << " use in 3 ways \n";
