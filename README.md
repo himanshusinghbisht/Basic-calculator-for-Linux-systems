@@ -29,5 +29,8 @@ output=$(calculla 1+2)
 or
 output=$(calculla $1+$2+$3) for positional arguments
 
+# for help
+calculla - h
+
 # cognition
 to better understand how " calculla " works , remove the comments preceding cout object in the program . This will help in understanding the program flow . 
