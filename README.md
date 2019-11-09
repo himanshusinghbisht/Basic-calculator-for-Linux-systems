@@ -1,4 +1,4 @@
-# Basic-calculator-for-Linux-systems
+# Calculla-for-Linux-systems
 # calculla
 simple calculator for better understanding working of modern interpreters and compilers &amp; a good linux command for  arithmatic operations in bash scripts
 
