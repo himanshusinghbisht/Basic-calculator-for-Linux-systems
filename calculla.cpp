@@ -1,3 +1,7 @@
+//   FUNCTIONS USED 
+//   runtime( to convert runtime arguments to a character array for easily processing the arguments supplied )
+//   ToNumber( to convert character array of arguments supplied to integers ) it returns int value
+
 #include<iostream>
 using namespace std;
 //
@@ -59,10 +63,39 @@ return 0;
 }
 int main(int argc,char*argv[]){
 string e;
-char exp[100];
-char op[10];
-int num[100];
-float realnum[100];
+char exp[100];      // array for storing runtime arguments or the expression supplied for calculation
+char op[10];        // for storing operators supplied ( example = 2+4/5 , op[] array will store +,/ { op['+','\'] }
+int num[100];       
+float realnum[100]; 
+// num[] array stores the numbers with a seperator constant to distinguish between the numbers example if expression is 25+4/5+55
+ // then op will store op['+','/','+'] and 
+ // num array will store num[2,5,7777,4,7777,5,7777,5,5,7777]
+  // 7777 is a constant which represents place of any operator in op array
+ // 7777 is used to help convert the num array easily to the form as given in realnum[] 
+  //
+ // now num array has 1 number in each index , then realnum[] array converts the numbers to actual numbers supplied
+  // realnum[] doesnt store 7777 like num , it converts the numbers into realnum[25,4,5,55] 
+ // now realnum has the numbers now all that is left is calculation
+ 
+  
+  // FLOW OF PROGRAM
+  // let's say i did :
+  // $calculla 2+45-6*4
+  // first thing that happens is all operators are stored in seperate array
+  // op['+','-','*']
+  // num[2,7777,4,5,7777,6,7777,4,7777]
+  // then the indexes where 7777 is present is caluclated and realnum array will store the numbers without 7777
+  // num[2,7777,4,5,7777,6,7777,4,7777] is copied in realnum array to give a form like realnum[2,45,6,4]
+  // now there is a '-' in op[] array before so the calculation is made where the '-' sign exist and that number
+  // in realnum index is made negative in this case it was 6 so now the real num array is 
+  // realnum[2,45,-6,4]
+  // now op[] array is used where '*' is present then this is used to calculate the product and changes are made to realnum array
+  // '*' is in 3rd index in op[] so that is used so 3+1th index in realnum is multiplied with the 3-1th index of realnum array
+  // realnum[2,45,-6,(4)*(-6)]
+  // realnum[2,45,0,-24] , the index where multiplication is done is made = 0 so ( -6 is changed to 0 )
+  // now just add the remaining number as there is no '*' sign
+  // realnum[2,45,0,-24] all values are added then 
+  // ans = 2+45-24 = 23
 int n=0;
 bool forever;
  if(argc==3)
