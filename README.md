@@ -1,3 +1,4 @@
+![demo for the program](demo/github-final.gif)
 # Calculla-for-Linux-systems
 # calculla
  calculator for better understanding working of modern interpreters and compilers &amp; a good linux command for  arithmatic operations in bash scripts
